@@ -3,6 +3,7 @@
 font-family: 'Lora', serif;
 font-family: 'Ubuntu', sans-serif;
 */
+html {}
 
 body {
     margin: 0;
@@ -16,9 +17,19 @@ Typography
 h1 {
     font-family: 'Lora', serif;
     font-weight: 400;
-    color: #143774;
     font-size: 2rem;
     margin: 0;
+}
+
+h2{
+   font-weight: bold;  
+   font-size: 1.25rem;
+   margin-top: 22px;
+   margin-bottom: 0px;
+}
+
+h1, h2, h3, .posts p{
+    color: #143774;
 }
 
 .subtitle {
@@ -46,6 +57,7 @@ Layout
 header {
     background: #f8f8f8;
     padding: 2em 0;
+    margin-bottom: 54px;;
 }
 
 @media (max-width: 675px) {
@@ -99,4 +111,132 @@ nav a:focus {
     nav li {
         margin: .5em 0;
     }
+}
+/* main  */
+
+main {
+display: flex;
+justify-content: center;
+}
+
+.col-1 {
+    max-width: 714px;
+    margin-right: 96px;
+    text-align: left;
+}
+
+.featured {
+    max-width: 714px;
+    border-bottom: 1px solid #707070;
+    margin-bottom: 2.5rem;
+    text-align: left;
+
+}
+
+.featured img {
+    width: 100%;
+    max-width: 714px; 
+    margin-left: 0.25rem;
+}
+
+.featured .text {
+    margin-left: 0.25rem;
+}
+
+img {
+max-width: 198px;
+   width: fit-content;
+   padding-top: 1.5rem;
+}
+
+.post-time {
+    font-size: 0.75rem;
+    color: #707070;
+}
+
+.text {
+    margin-left: 2rem;
+    text-align: left;
+    font: normal normal 300 18px/28px Ubuntu;
+    color: #707070;
+
+}
+
+.complicated {
+
+}
+
+.continue {
+    color: #1792D2;
+    font-weight: bold;
+    font-size: 14px;
+
+}
+
+.articles {
+
+}
+
+.article {
+    display: flex;
+
+}
+
+.col-2 {
+    max-width: 240px;
+    text-align: center;
+
+}
+
+.about-me, .recent-posts {
+    width: 90%;
+    width: 240px;
+    border: 20px solid #EBEBEB;
+
+}
+
+.aside-img {
+    height: 133px;
+    width: 100%;
+
+}
+
+.about-me p {
+    margin: 19px 25px;
+    text-align: left; 
+    color: #143774; 
+    font-weight: lighter;
+
+}
+
+.recent-posts {
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+    align-content:flex-start;
+
+}
+
+.posts {
+    margin-bottom: 31.5px;
+
+}
+
+.posts p {
+    text-align: left;
+    border-bottom: 1px solid #707070;
+    margin: 0 1rem;
+    padding: 18.5px 0 52.5px 0;
+}
+
+footer {
+   background: #143774;
+   text-align: center;
+   margin: 0;
+
+}
+
+.copy-right { 
+    padding-bottom: 50px;
+
 }
